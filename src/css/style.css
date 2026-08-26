@@ -69,9 +69,13 @@ nav {
     align-items: center;
     justify-content: right;
 }
-.right-header>img {
+.right-header>a{
     width: 20%;
     height: 90%;
+}
+.right-header>a>img {
+    width: 100%;
+    height: 100%;
 }
 
 /* center header */
@@ -112,6 +116,7 @@ nav {
     border-radius: 8px;
     background-color: var(--button);
     color: var(--text-light);
+    font-family: font-m;
 }
 
 
@@ -119,5 +124,5 @@ nav {
 .main{
     width: 100%;
     height: 100%;
-    
+    background-color: transparent;
 }
