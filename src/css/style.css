@@ -15,20 +15,15 @@ ul{
     list-style-type: none;
 }
 :root {
-    --background: #E8F1F5;
-    --background-light: #F4F8FA;
-    --card: #FFFFFF;
-
-    --primary: #0EA5E9;
-    --accent: #38BDF8;
-
-    --text: #0F172A;
-    --text-secondary: #526575;
-
-    --border: #D4E2E8;
+    --background: #e0e1dd;
+    --button: #778da9;
+    --card: #415a77;
+    --subtext: #1b263b;
+    --text: #0d1b2a;
+    --text-light:#ffff;
 }
 body {
-    background-color: var(--background-1);
+    background-color: var(--background);
 }
 
 
@@ -59,7 +54,7 @@ nav {
 }
 
 .container-header-item {
-    width: 95%;
+    width: 90%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -68,12 +63,15 @@ nav {
 
 /* right header */
 .right-header {
-    width: max-content;
+    width: 30%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
 }
 .right-header>img {
-    width: 65px;
-    height: 65px;
+    width: 20%;
+    height: 90%;
 }
 
 /* center header */
@@ -94,22 +92,32 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--text);
-    font-weight: 600;
+    font-family: font-m;
+}
+
+/* left header */
+.left-header{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.left-header>button{
+    width: 37%;
+    height: 50%;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--button);
+    color: var(--text-light);
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* ---------------- */
+/* ----------------- */
+.main{
+    width: 100%;
+    height: 100%;
+    
+}

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: font-b;
+    src: url(./woff/IRANSansX-Bold.woff);
+}
+@font-face {
+    font-family: font-h;
+    src: url(./woff/IRANSansX-Heavy.woff);
+}
+@font-face {
+    font-family: font-l;
+    src: url(./woff/IRANSansX-Light.woff);
+}
+@font-face {
+    font-family: font-th;
+    src: url(./woff/IRANSansX-Thin.woff);
+}
+@font-face {
+    font-family: font-r;
+    src: url(./woff/IRANSansX-Regular.woff);
+}
+@font-face {
+    font-family: font-m;
+    src: url(./woff/IRANSansX-Medium.woff);
+}
