@@ -22,8 +22,8 @@ ul {
     --text: #0F172A;
     --text-secondary: #ffff;
     --text-third: #64748B;
-    --button: #0B1F3A;
-    --accent: #C69C6D;
+    --first-color: #0B1F3A;
+    --second-color: #C69C6D;
 }
 
 
@@ -108,11 +108,12 @@ nav {
     font-size: 1rem;
     color: var(--text);
     font-family: font-m;
+    transition: transform .3s ease-in-out;
 }
 
 .center-header>li>a:hover {
-    color: #212e43;
-    transform: scale(1.02, 1.02);
+    color: var(--second-color);
+    transform: scale(1.05 , 1.05);
 }
 
 /* left header */
@@ -129,7 +130,7 @@ nav {
     height: 50%;
     border: 1px solid var(--border);
     border-radius: 8px;
-    background-color: var(--button);
+    background-color: var(--first-color);
     color: var(--text-secondary);
     font-family: font-m;
     cursor: pointer;
@@ -146,7 +147,8 @@ main {
     justify-content: center;
     flex-direction: column;
 }
-
+/* ------------ */
+/* hero */
 .hero{
     width: 90%;
     height: calc(100dvh - 75px);
@@ -185,13 +187,13 @@ main {
 }
 
 .description-right-hero>h2>span {
-    color: var(--accent);
+    color: var(--second-color);
     font-size: 2rem;
     font-family: font-h;
 }
 
 .description-right-hero>h1 {
-    color: var(--button);
+    color: var(--first-color);
     font-family: font-b;
 }
 
@@ -217,16 +219,16 @@ main {
 }
 
 .buttons-right-hero>button:nth-of-type(1) {
-    border: 2px solid var(--button);
+    border: 2px solid var(--first-color);
     font-size: .9rem;
-    color: var(--button);
+    color: var(--first-color);
     font-family: font-b;
     background-color: transparent;
 }
 
 .buttons-right-hero>button:nth-of-type(2) {
     border: 1px solid var(--border);
-    background-color: var(--accent);
+    background-color: var(--second-color);
     font-family: font-m;
     font-size: .9rem;
     color: var(--text-secondary);
@@ -248,4 +250,28 @@ main {
     height: 100%;
     border: none;
     border-radius: 15px;
+}
+
+
+/* ------------------ */
+/* benefits */
+.benefits{
+    width: 100%;
+    height: calc( 100dvh - 75px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+/* title benefits */
+.title-benefits{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-benefits>h3{
+    color: ;
 }
