@@ -76,13 +76,13 @@ nav {
 }
 
 .right-header>a {
-    width: 20%;
-    height: 90%;
+    width: max-content;
+    height: max-content;
 }
 
 .right-header>a>img {
-    width: 100%;
-    height: 100%;
+    width: 100px;
+    height: 100px;
 }
 
 /* center header */
