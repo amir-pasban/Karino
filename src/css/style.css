@@ -417,6 +417,24 @@ main {
     border-radius: 20px;
 }
 
+/* down product item */
+.product-item{
+    width: 200px;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.159);
+    border-radius: 16px;
+    padding: 10px;
+}
+
+.picture-product-item{
+    width: 100%;
+    height: 65%;
+}
+.picture-product-item>img{
+    width: 100%;
+    height: 100%;
+}
+
 
 
 /* ------------------ */

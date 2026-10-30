@@ -16,8 +16,11 @@
     <link rel="stylesheet" href="./src/font/IRANSansX/font.css">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="./assets/photo/کارینو .png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/photo/karino.png" type="image/x-icon">
 
+    <!-- json -->
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#1a73e8">
 </head>
 
 <body>
@@ -99,22 +102,44 @@
 
                     <div class="top-categories-item">
 
-                        <a href="#"><p>آلومینیوم</p></a>
-                        <a href="#"><p>UPVC</p></a>
-                        
+                        <a href="#">
+                            <p>آلومینیوم</p>
+                        </a>
+                        <a href="#">
+                            <p>UPVC</p>
+                        </a>
+
                     </div>
 
                     <div class="down-categories-item">
 
-                        <a href="#"><p>ثابت</p></a>
-                        <a href="#"><p>تک حالته</p></a>
-                        <a href="#"><p>دوحالته</p></a>
-                        <a href="#"><p>کشویی</p></a>
-                        <a href="#"><p>فولکس واگنی</p></a>
-                        <a href="#"><p>کلنگی</p></a>
-                        <a href="#"><p>دایره‌ای</p></a>
-                        <a href="#"><p>آکاردئونی</p></a>
-                        <a href="#"><p>بیشتر ...</p></a>
+                        <a href="#">
+                            <p>ثابت</p>
+                        </a>
+                        <a href="#">
+                            <p>تک حالته</p>
+                        </a>
+                        <a href="#">
+                            <p>دوحالته</p>
+                        </a>
+                        <a href="#">
+                            <p>کشویی</p>
+                        </a>
+                        <a href="#">
+                            <p>فولکس واگنی</p>
+                        </a>
+                        <a href="#">
+                            <p>کلنگی</p>
+                        </a>
+                        <a href="#">
+                            <p>دایره‌ای</p>
+                        </a>
+                        <a href="#">
+                            <p>آکاردئونی</p>
+                        </a>
+                        <a href="#">
+                            <p>بیشتر ...</p>
+                        </a>
                         <!-- <a href="#"><p>خلیجی</p></a>
                         <a href="#"><p>کمانی</p></a>
                         <a href="#"><p>لیفت اند اسلاید</p></a> -->
@@ -127,13 +152,61 @@
             <!-- container products item -->
             <div class="container-products-item">
 
-                <div class="product-item">
+                <!-- top product item -->
+                <div class="top-product">
+                    <p>انواع پنجره</p>
+                    <button type="button">مشاهده همه <i class="fa-solid fa-angle-left"></i></button>
+                </div>
 
-                    <div class="picture-product-item">
-                        <!-- <img src="./assets/photo/fixed window.jpg" alt="fixed window"> -->
+                <!-- down product item -->
+                <div class="daown-product">
+
+                    <div class="product-item">
+
+                        <div class="picture-product-item">
+                            <img src="./assets/photo/fixed window.jpg" alt="fixed window">
+                        </div>
+
+                        <div class="details-product-item">
+                            <p>7,500,000</p>
+                            <p>متر مربع</p>
+                        </div>
+
                     </div>
+                    <div class="product-item">
 
-                    <div class="details-product-item">
+                        <div class="picture-product-item">
+                            <img src="./assets/photo/fixed window.jpg" alt="fixed window">
+                        </div>
+
+                        <div class="details-product-item">
+                            <p>7,500,000</p>
+                            <p>متر مربع</p>
+                        </div>
+
+                    </div>
+                    <div class="product-item">
+
+                        <div class="picture-product-item">
+                            <img src="./assets/photo/fixed window.jpg" alt="fixed window">
+                        </div>
+
+                        <div class="details-product-item">
+                            <p>7,500,000</p>
+                            <p>متر مربع</p>
+                        </div>
+
+                    </div>
+                    <div class="product-item">
+
+                        <div class="picture-product-item">
+                            <img src="./assets/photo/fixed window.jpg" alt="fixed window">
+                        </div>
+
+                        <div class="details-product-item">
+                            <p>7,500,000</p>
+                            <p>متر مربع</p>
+                        </div>
 
                     </div>
 
@@ -143,9 +216,9 @@
 
         </div>
 
-<!-- benefits -->
+        <!-- benefits -->
         <div class="benefits">
-            
+
             <!-- title benefits -->
             <div class="title">
                 <h2>چرا کارینو ؟</h2>
@@ -179,7 +252,7 @@
                         <p>کمک به کاهش انتقال صدا و اتلاف انرژی در ساختمان.</p>
                     </div>
 
-                    
+
                 </div>
 
 
@@ -217,7 +290,11 @@
 
     </main>
 
-
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("./sw.js");
+        }
+    </script>
 
 </body>
 
