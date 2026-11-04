@@ -415,15 +415,35 @@ main {
     background-color: #F5F7FA;
     border: 1px solid rgba(0, 0, 0, 0.159);
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* top product item */
+.top-product{
+    width: 100%;
+    height: 80px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
 }
 
 /* down product item */
+
+.down-product{
+    width: 100%;
+    /* height: ; */
+}
 .product-item{
     width: 200px;
     height: 100%;
     border: 1px solid rgba(0, 0, 0, 0.159);
     border-radius: 16px;
     padding: 10px;
+
 }
 
 .picture-product-item{
