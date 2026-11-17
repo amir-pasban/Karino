@@ -186,7 +186,7 @@ header {
 
 /* left header */
 .nav-btn {
-    width: 12%;
+    width: 30%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -198,8 +198,8 @@ header {
 .nav-btn>button {
     width: 140px;
     height: 42px;
-    border: 1px solid var(--text-secondary);
-    border-radius: 25px;
+    /* border: 1px solid var(--text-secondary); */
+    /* border-radius: 25px; */
     /* background-color: var(--first-color); */
     background-color: transparent;
     color: var(--text-secondary);
@@ -247,7 +247,7 @@ main {
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     z-index: 0;
     border-radius: 0 0 2px 2px;
 }
@@ -268,7 +268,7 @@ main {
 
 /* right section hero */
 .right-hero {
-    width: 100%;
+    width: 60%;
     height: max-content;
     display: flex;
     flex-direction: column;
@@ -276,7 +276,8 @@ main {
     justify-content: center;
     gap: 40px;
     z-index: 3;
-    background-color: aqua;
+    padding-right: 50px;
+    /* background-color: aqua; */
 }
 
 .description-right-hero {
@@ -286,19 +287,19 @@ main {
     flex-direction: column;
     align-items: start;
     justify-content: center;
-    gap: 15px;
+    gap: 17px;
     cursor: default;
 }
 
 .description-right-hero>h2 {
-    color: var(--text-secondary);
+    color: var(--second-color);
     font-family: font-m;
     font-size: 1.3rem;
 }
 
 .description-right-hero>h2>span {
     color: var(--second-color);
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-family: font-m;
 }
 
@@ -313,11 +314,12 @@ main {
 }
 
 .buttons-right-hero {
-    width: max-content;
+    width: 100%;
     height: max-content;
     display: flex;
     align-items: center;
     justify-content: right;
+    margin-top: 50px;
     gap: 15px;
     /* background-color: #192941; */
 }
