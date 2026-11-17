@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./src/font/IRANSansX/font.css">
 
     <!-- favicon -->
-    <link rel="shortcut icon" href="./assets/photo/karino.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/photo/karino_favicon_64.png" type="image/x-icon">
 
     <!-- json -->
     <link rel="manifest" href="/manifest.json">
@@ -28,31 +28,35 @@
 
     <header>
 
-        <nav>
-            <!-- container header item  -->
-            <ul class="container-header-item">
+        <nav class="navbar">
+            
 
-                <!-- right header -->
-                <div class="right-header">
-                    <a href="index.html"><img src="./assets/photo/karino.png" alt="کارینو"></a>
-
-                </div>
-
-                <!-- center header -->
-                <div class="center-header">
-                    <li><a href="#">j</a></li>
-                    <li><a href="#">نمونه کارها</a></li>
-                    <li><a href="#">خرید</a></li>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="./assets/photo/logo3.png" alt="کارینو"></a>
+            </div>
+            
+            <!-- Menu -->
+                <ul class="nav-menu">
+                    <li><a href="/index.html">خانه</a></li>
+                    <li><a href="#">محصولات <i class="fa-whiteboard fa-semibold fa-angle-down"></i></a></li>
+                    <li><a href="#">پروژه ها</a></li>
                     <li><a href="#">درباره ما</a></li>
                     <li><a href="#">تماس با ما</a></li>
-                </div>
+                </ul>
+                
 
-                <!-- left header -->
-                <div class="left-header">
-                    <button type="button">ثبت سفارش</button>
-                </div>
+                <!-- Search bar -->
+                <!-- <div class="nav-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" name="search" id="search-bar">
+                </div> -->
 
-            </ul>
+                
+                <!-- Btn Order -->
+                <div class="nav-btn">
+                    <button type="button">مشاوره رایگان  <i class="fa-regular fa-user-headset"></i></button>
+                </div>
 
         </nav>
 
@@ -82,9 +86,9 @@
             </div>
 
             <!-- left section hero -->
-            <div class="left-hero">
+            <!-- <div class="left-hero">
                 <img src="./assets/photo/window-hero.webp" alt="photo">
-            </div>
+            </div> -->
 
         </div>
 
@@ -290,11 +294,7 @@
 
     </main>
 
-    <script>
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("./sw.js");
-        }
-    </script>
+    <script></script>
 
 </body>
 
