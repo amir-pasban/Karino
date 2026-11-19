@@ -20,7 +20,7 @@ ul {
 :root {
     --background: #F5F7FA;
     --text: #081526;
-    --text-secondary: #ffff;
+    --text-on-dark: #ffff;
     --text-third: #64748B;
     --first-color: #192941;
     --second-color: #C69C6D;
@@ -95,7 +95,7 @@ header {
 }
 
 .logo>a>img {
-    height: 78px;
+    height: 65px;
     width: 200px;
     object-fit: contain;
 }
@@ -123,7 +123,7 @@ header {
     align-items: center;
     justify-content: center;
     font-size: 1rem;
-    color: var(--text-secondary);
+    color: var(--text-on-dark);
     font-family: font-m;
     padding: 25px 10px;
     transition: all .6s ease-in-out;
@@ -152,41 +152,11 @@ header {
 }
 
 
-/* search bar
-.nav-search {
-    width: 30%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: aqua;
-    position: relative;
-}
-.nav-search>input{
-    width: 100%;
-    height: 35px;
-    border-radius: 12px;
-    background-color:rgba(128, 128, 128, 0.118);
-    border: none;
-}
-.nav-search>input:focus{
-    outline: none;
-}
-.nav-search>input::placeholder{
-    margin-right: 7px;
-}
-.nav-search>i{
-    color: #192941;
-    position: absolute;
-    right: 5px;
-
-    
-} */
 
 
 /* left header */
-.nav-btn {
-    width: 30%;
+.nav-btn-container {
+    width: 28%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -195,24 +165,64 @@ header {
 }
 
 
-.nav-btn>button {
-    width: 140px;
-    height: 42px;
-    /* border: 1px solid var(--text-secondary); */
-    /* border-radius: 25px; */
-    /* background-color: var(--first-color); */
-    background-color: transparent;
-    color: var(--text-secondary);
-    font-family: font-m;
-    cursor: pointer;
-}
-.nav-btn>button i{
-    font-size: 1.2rem;
+.nav-btn {
+    width: max-content;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--text-on-dark);
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.042);
+    overflow: hidden;
 }
 
-/* .btn-order:hover{
-    
-} */
+.nav-btn>button {
+    width: 120px;
+    height: 100%;
+    background-color: transparent;
+    color: var(--text-on-dark);
+    font-family: font-m;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    /* background-color: #192941; */
+}
+
+.nav-btn>button::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: var(--text-on-dark);
+    z-index: 0;
+}
+
+.nav-btn>button i {
+    font-size: 1rem;
+}
+
+.search-container {
+    width: 200px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+#search {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+}
+
+.search-container>i {
+    position: absolute;
+}
 
 
 /* ----------------- */
@@ -251,16 +261,15 @@ main {
     z-index: 0;
     border-radius: 0 0 2px 2px;
 }
+
 .hero::before {
     content: "";
     position: absolute;
     inset: 0;
 
-    background: linear-gradient(
-        90deg,
-        rgba(25, 41, 65, 0.12),
-        rgba(25, 41, 65, 0.58)
-    );
+    background: linear-gradient(90deg,
+            rgba(25, 41, 65, 0.12),
+            rgba(25, 41, 65, 0.58));
 
     pointer-events: none;
 }
@@ -304,13 +313,13 @@ main {
 }
 
 .description-right-hero>h1 {
-    color: var(--text-secondary);
+    color: var(--text-on-dark);
     font-family: font-b;
 }
 
 .description-right-hero>p {
     font-family: font-m;
-    color: var(--text-secondary);
+    color: var(--text-on-dark);
 }
 
 .buttons-right-hero {
@@ -332,9 +341,9 @@ main {
 }
 
 .buttons-right-hero>button:nth-of-type(1) {
-    border: 2px solid var(--text-secondary);
+    border: 2px solid var(--text-on-dark);
     font-size: .9rem;
-    color: var(--text-secondary);
+    color: var(--text-on-dark);
     font-family: font-b;
     background-color: transparent;
 }
@@ -344,7 +353,7 @@ main {
     background-color: var(--second-color);
     font-family: font-m;
     font-size: .9rem;
-    color: var(--text-secondary);
+    color: var(--text-on-dark);
 }
 
 
